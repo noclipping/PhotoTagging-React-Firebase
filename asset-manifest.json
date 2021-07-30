@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PhotoTagging-React-Firebase/static/css/main.12a23326.chunk.css",
-    "main.js": "/PhotoTagging-React-Firebase/static/js/main.a12b79f8.chunk.js",
-    "main.js.map": "/PhotoTagging-React-Firebase/static/js/main.a12b79f8.chunk.js.map",
+    "main.js": "/PhotoTagging-React-Firebase/static/js/main.d3fc8a0d.chunk.js",
+    "main.js.map": "/PhotoTagging-React-Firebase/static/js/main.d3fc8a0d.chunk.js.map",
     "runtime-main.js": "/PhotoTagging-React-Firebase/static/js/runtime-main.0b2bfbad.js",
     "runtime-main.js.map": "/PhotoTagging-React-Firebase/static/js/runtime-main.0b2bfbad.js.map",
     "static/js/2.23ff5f39.chunk.js": "/PhotoTagging-React-Firebase/static/js/2.23ff5f39.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0b2bfbad.js",
     "static/js/2.23ff5f39.chunk.js",
     "static/css/main.12a23326.chunk.css",
-    "static/js/main.a12b79f8.chunk.js"
+    "static/js/main.d3fc8a0d.chunk.js"
   ]
 }
