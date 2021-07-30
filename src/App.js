@@ -46,7 +46,7 @@ function App() {
         <Route exact path="/PhotoTagging-React-Firebase/" render={(props) => <Home />}/>
       </Switch>
       <Switch>
-        <Route exact path="/play" render={(props)=>(<Play {...props} user = {currentUser}upperUserFunc={upperUserFunc}/>)}/>
+        <Route exact path="/PhotoTagging-React-Firebase/play" render={(props)=>(<Play {...props} user = {currentUser}upperUserFunc={upperUserFunc}/>)}/>
       </Switch>
     </Router>
     </div>
