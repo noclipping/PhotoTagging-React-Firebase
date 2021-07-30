@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -20,25 +20,22 @@ const config = {
 firebase.initializeApp(config);
 function App() {
 
-  const firestore = firebase.firestore();
+
 
   const [currentUser, setCurrentUser] = useState()
-  const [signedIn, setSignedIn] = useState(false)
+
   useEffect(()=>{
 
-   const signInStatus = JSON.parse(localStorage.getItem("signInStatus"));
    firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       setCurrentUser(user)
-      console.log('a user is signed in', user)
     } else {
       setCurrentUser(user)
-      console.log('no user is signed in')
     }
   });
   },[])
   function upperUserFunc(){
-    console.log('FUCK')
+    return ''
   }
   return (
     <div className="App">

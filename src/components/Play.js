@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import '../App.css';
 import StartScreen from "./startScreen";
 import { useState, React, useEffect } from "react";
@@ -44,12 +44,11 @@ export default function Play(props){
     function Start(){
         
         setPlaying(true)
-        console.log(Date.now())
-        console.log(props.user, 'user')
+
         docRef.set({
             startTime: Date.now()/1000
         }).then(()=>{
-            console.log('start time sent')
+
             
         })
     }
@@ -60,10 +59,10 @@ export default function Play(props){
         newObj['time']=time
         firestore.collection("leaderBoard").doc(userid).set(newObj)
         .then(() => {
-            console.log("Document successfully written!");
+            console.log("Time sent to leaderboard!");
         })
         .catch((error) => {
-            console.error("Error writing document: ", error);
+            console.error("Error sending to leaderboard: ", error);
         });
     }
 
@@ -80,7 +79,7 @@ export default function Play(props){
         var rect = e.target.getBoundingClientRect();
         var x = e.clientX - rect.left; //x position within the element.
         var y = e.clientY - rect.top;  //y position within the element.
-        console.log("X : " + x + " | Y : " + y + ".");
+        // console.log("X : " + x + " | Y : " + y + ".");
         setMouseX(x);
         setMouseY(y);
         setShow({left:relativeX,top:relativeY,position:'absolute'})
@@ -93,21 +92,21 @@ export default function Play(props){
         let CharLocation = firestore.doc(`characterLocations/${char}`)
         let user = firestore.doc(`users/Guest`)
         if(props.user){ user = firestore.doc(`users/${props.user.uid}`)}
-        let leaderBoard = firestore.doc(`users/leaderBoard`)
+
         let username = 'Guest';
         if(props.user){ username = props.user.displayName;}
             CharLocation.get().then(doc=>{
                 if(doc && doc.exists){
                     const charData = doc.data();
-                    console.log(charData)
+                    
                     if(mouseX > charData.x1 && mouseX < charData.x2 ){
                         if(mouseY > charData.y1 && mouseY < charData.y2 ){
-                            console.log('success!')
+
                             setFoundChars(prev=>{
                                 prev[char]=true
                                 return prev
                             })
-                            console.log(foundChars)
+
                             // vvv --- checks if every character has been found
                            if(Object.entries(foundChars).every(e=>e[1]===true)){
 
@@ -116,7 +115,7 @@ export default function Play(props){
                                     let userInfo = doc.data()
                                     let endTimeSeconds = Date.now()/1000-userInfo.startTime
                                     setWinTime(hms(endTimeSeconds))
-                                    console.log(userInfo.uid,' <-- uid ')
+
                                     updateLeaderboard(userInfo.uid,username,endTimeSeconds)
                                     
 

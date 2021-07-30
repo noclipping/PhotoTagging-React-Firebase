@@ -1,8 +1,8 @@
 
 import '../App.css';
 
-import { useState, React, useEffect } from "react";
-import firebase from "firebase";
+import { React } from "react";
+
 import Link from './Link.png'
 import goldenStar from './goldenStar.png'
 import 'firebase/firestore'
