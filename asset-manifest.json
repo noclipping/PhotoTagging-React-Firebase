@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aresous/PhotoTagging-React-Firebase/static/css/main.12a23326.chunk.css",
+    "main.js": "/aresous/PhotoTagging-React-Firebase/static/js/main.e9b707c1.chunk.js",
+    "main.js.map": "/aresous/PhotoTagging-React-Firebase/static/js/main.e9b707c1.chunk.js.map",
+    "runtime-main.js": "/aresous/PhotoTagging-React-Firebase/static/js/runtime-main.96acb484.js",
+    "runtime-main.js.map": "/aresous/PhotoTagging-React-Firebase/static/js/runtime-main.96acb484.js.map",
+    "static/js/2.f06a0d4d.chunk.js": "/aresous/PhotoTagging-React-Firebase/static/js/2.f06a0d4d.chunk.js",
+    "static/js/2.f06a0d4d.chunk.js.map": "/aresous/PhotoTagging-React-Firebase/static/js/2.f06a0d4d.chunk.js.map",
+    "index.html": "/aresous/PhotoTagging-React-Firebase/index.html",
+    "static/css/main.12a23326.chunk.css.map": "/aresous/PhotoTagging-React-Firebase/static/css/main.12a23326.chunk.css.map",
+    "static/js/2.f06a0d4d.chunk.js.LICENSE.txt": "/aresous/PhotoTagging-React-Firebase/static/js/2.f06a0d4d.chunk.js.LICENSE.txt",
+    "static/media/Link.a53f915d.png": "/aresous/PhotoTagging-React-Firebase/static/media/Link.a53f915d.png",
+    "static/media/goldenStar.50440f2d.png": "/aresous/PhotoTagging-React-Firebase/static/media/goldenStar.50440f2d.png",
+    "static/media/pierre-roussel-n64phone.8e30de16.jpg": "/aresous/PhotoTagging-React-Firebase/static/media/pierre-roussel-n64phone.8e30de16.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96acb484.js",
+    "static/js/2.f06a0d4d.chunk.js",
+    "static/css/main.12a23326.chunk.css",
+    "static/js/main.e9b707c1.chunk.js"
+  ]
+}
