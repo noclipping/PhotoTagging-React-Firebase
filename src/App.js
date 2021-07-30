@@ -43,7 +43,7 @@ function App() {
       
       <Nav user={firebase.auth().currentUser}/>
       <Switch>
-        <Route exact path="/" render={(props) => <Home />}/>
+        <Route exact path="/PhotoTagging-React-Firebase/" render={(props) => <Home />}/>
       </Switch>
       <Switch>
         <Route exact path="/play" render={(props)=>(<Play {...props} user = {currentUser}upperUserFunc={upperUserFunc}/>)}/>
