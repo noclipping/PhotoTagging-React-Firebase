@@ -48,15 +48,15 @@ export default function Nav(props) {
   }
   return (
     <ul className="topnav">
-      <Link to="/">
+      <Link to="/PhotoTagging-React-Firebase/">
         <li style={{position:'absolute',left:20,top:20,fontSize:'30px', padding:'0', margin:'0'}}>🕵</li>
       </Link>
       
-      <Link to="/">
+      <Link to="/PhotoTagging-React-Firebase/">
         <li>Home</li>
       </Link>
       
-      <Link to="play">
+      <Link to="/PhotoTagging-React-Firebase/play">
         <li>Play</li>
       </Link>
       
