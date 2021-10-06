@@ -78,7 +78,7 @@ export default function Play(props){
         var rect = e.target.getBoundingClientRect();
         var x = e.clientX - rect.left; //x position within the element.
         var y = e.clientY - rect.top;  //y position within the element.
-        // console.log("X : " + x + " | Y : " + y + ".");
+        
         setMouseX(x);
         setMouseY(y);
         setShow({left:relativeX,top:relativeY,position:'absolute'})
