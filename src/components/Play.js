@@ -1,4 +1,3 @@
-
 import '../App.css';
 import StartScreen from "./startScreen";
 import { useState, React, useEffect } from "react";
@@ -131,10 +130,6 @@ export default function Play(props){
                     }
                 }
             })
-        
-        //   console.log(char)
-        //   console.log(mouseX,'x')
-        //   console.log(mouseY,'y')
           setShow({display:'none'})
       }
 
